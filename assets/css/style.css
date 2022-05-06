@@ -1,0 +1,23 @@
+html, body{
+    margin: 0;
+    background-color: #008A00;
+    color: white;
+}
+
+.cabecero{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.carta{
+    position: relative;
+    width: 160px;
+    margin-left: -80px;
+}
+
+#cartas-jugador, #cartas-computadora{
+    height: 230px;
+}
