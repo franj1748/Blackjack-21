@@ -101,7 +101,7 @@
             if (puntosComputadora === puntosMinimos){
                 swal({
                     title: "¡Empate!",
-                    text: `Tanto tu como la computadora han conseguido ${puntosComputadora} puntos.`,
+                    text: `Tanto tú, como la computadora han conseguido ${puntosComputadora} puntos.`,
                     icon: "info",
                     buttons: ["Cerrar", "Nuevo juego"],
                     }).then((willDelete) => {
