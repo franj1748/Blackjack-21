@@ -99,13 +99,52 @@
 
         setTimeout(() => {
             if (puntosComputadora === puntosMinimos){
-                alert('¡Empate!');
+                swal({
+                    title: "¡Empate!",
+                    text: `Tanto tu como la computadora han conseguido ${puntosComputadora} puntos.`,
+                    icon: "info",
+                    buttons: ["Cerrar", "Nuevo juego"],
+                    }).then((willDelete) => {
+                        if (willDelete){
+                            iniciarJuego();
+                        }
+                    });
             } else if(puntosMinimos > 21){
-                alert('¡Computadora Gana!');
+                swal({
+                    title: "¡Perdiste!",
+                    text: `Ha ganado la computadora con ${puntosComputadora} puntos.
+                    Tus Puntos: ${puntosMinimos}.`,
+                    icon: "error",
+                    buttons: ["Cerrar", "Nuevo juego"],
+                    }).then((willDelete) => {
+                        if (willDelete){
+                            iniciarJuego();
+                        }
+                    });
             }else if(puntosComputadora > 21){
-                alert('¡Ganaste!');
+                swal({
+                    title: "¡Ganaste!",
+                    text: `Tus Puntos: ${puntosMinimos}. 
+                    Puntos de la computadora ${puntosComputadora}.`,
+                    icon: "success",
+                    buttons: ["Cerrar", "Nuevo juego"],
+                    }).then((willDelete) => {
+                        if (willDelete){
+                            iniciarJuego();
+                        }
+                    });
             }else{
-                alert('¡Computadora Gana!');
+                swal({
+                    title: "¡Perdiste!",
+                    text: `Ha ganado la computadora con ${puntosComputadora} puntos.
+                    Tus Puntos: ${puntosMinimos}.`,
+                    icon: "error",
+                    buttons: ["Cerrar", "Nuevo juego"],
+                    }).then((willDelete) => {
+                        if (willDelete){
+                            iniciarJuego();
+                        }
+                    });
             }
         }, 20);
 

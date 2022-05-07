@@ -1,7 +1,6 @@
 html, body{
     margin: 0;
-    background-color: #008A00;
-    color: white;
+    background-image: url(/assets/poker-ash.jpg);
 }
 
 .cabecero{
